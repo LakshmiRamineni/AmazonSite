@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon]">
+  <test name="goToAmazonPage(failed)">
+    <classes>
+      <class name="Tests.AmazonOrderPlaceTest">
+        <methods>
+          <include name="test_AddMultipleItemsToCart"/>
+          <include name="goToAmazonPage"/>
+        </methods>
+      </class> <!-- Tests.AmazonOrderPlaceTest -->
+    </classes>
+  </test> <!-- goToAmazonPage(failed) -->
+</suite> <!-- Failed suite [Amazon] -->

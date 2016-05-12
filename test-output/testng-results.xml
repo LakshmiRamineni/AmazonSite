@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon" duration-ms="21424" started-at="2016-05-12T04:16:41Z" finished-at="2016-05-12T04:17:03Z">
+    <groups>
+    </groups>
+    <test name="goToAmazonPage" duration-ms="21424" started-at="2016-05-12T04:16:41Z" finished-at="2016-05-12T04:17:03Z">
+      <class name="Tests.AmazonOrderPlaceTest">
+        <test-method status="PASS" signature="goToAmazonPage()[pri:0, instance:Tests.AmazonOrderPlaceTest@40b4579a]" name="goToAmazonPage" is-config="true" duration-ms="7767" started-at="2016-05-12T09:46:41Z" finished-at="2016-05-12T09:46:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAmazonPage -->
+        <test-method status="PASS" signature="test_AddSingleItemToCart()[pri:1, instance:Tests.AmazonOrderPlaceTest@40b4579a]" name="test_AddSingleItemToCart" duration-ms="13560" started-at="2016-05-12T09:46:49Z" finished-at="2016-05-12T09:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AddSingleItemToCart -->
+        <test-method status="FAIL" signature="test_AddMultipleItemsToCart()[pri:2, instance:Tests.AmazonOrderPlaceTest@40b4579a]" name="test_AddMultipleItemsToCart" duration-ms="25" started-at="2016-05-12T09:47:03Z" finished-at="2016-05-12T09:47:03Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Window not found. The browser window may have been closed.
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'PRINHYLTPAP0932.local', ip: '172.16.53.197', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.3', java.version: '1.7.0_79'
+*** Element info: {Using=name, value=field-keywords}
+Session ID: 6f708749-b9e3-f149-b10a-45237a4f5d5a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'PRINHYLTPAP0932.local', ip: '172.16.53.197', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.3', java.version: '1.7.0_79'
+*** Element info: {Using=name, value=field-keywords}
+Session ID: 6f708749-b9e3-f149-b10a-45237a4f5d5a
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at locators.AmazonOrderPlace.clearValueInSearchField(AmazonOrderPlace.java:69)
+	at Tests.AmazonOrderPlaceTest.test_AddMultipleItemsToCart(AmazonOrderPlaceTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'PRINHYLTPAP0932.local', ip: '172.16.53.197', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.3', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12715)
+	at <anonymous class>.Dispatcher.executeAs/<(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
+	at <anonymous class>.Resource.prototype.handle(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
+	at <anonymous class>.Dispatcher.prototype.dispatch(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
+	at <anonymous class>.WebDriverServer/<.handle(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
+	at <anonymous class>.createHandlerFunc/<(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at <anonymous class>.Connection.prototype.process(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at <anonymous class>.RequestReader.prototype._handleResponse(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at <anonymous class>.RequestReader.prototype._processBody(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AddMultipleItemsToCart -->
+      </class> <!-- Tests.AmazonOrderPlaceTest -->
+    </test> <!-- goToAmazonPage -->
+  </suite> <!-- Amazon -->
+</testng-results>
