@@ -1,34 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Amazon</th></tr><tr><td><a href="#t0">goToAmazonPage</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,424</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon</th></tr></tbody><tbody id="t0"><tr><th colspan="4">goToAmazonPage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.AmazonOrderPlaceTest</td><td><a href="#m0">test_AddMultipleItemsToCart</a></td><td rowspan="1">1463026623009</td><td rowspan="1">25</td></tr><tr><th colspan="4">goToAmazonPage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.AmazonOrderPlaceTest</td><td><a href="#m1">test_AddSingleItemToCart</a></td><td rowspan="1">1463026609444</td><td rowspan="1">13560</td></tr></tbody></table><h2>goToAmazonPage</h2><h3 id="m0">Tests.AmazonOrderPlaceTest#test_AddMultipleItemsToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 15 milliseconds
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Amazon</th></tr><tr><td><a href="#t0">goToAmazonPage</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">32,202</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon</th></tr></tbody><tbody id="t0"><tr><th colspan="4">goToAmazonPage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests.AmazonOrderPlaceTest</td><td><a href="#m0">test_AddMultipleItemsToCart</a></td><td rowspan="1">1463115561633</td><td rowspan="1">3384</td></tr><tr class="failedeven"><td><a href="#m1">test_AddSingleItemToCart</a></td><td rowspan="1">1463115539355</td><td rowspan="1">21982</td></tr></tbody></table><h2>goToAmazonPage</h2><h3 id="m0">Tests.AmazonOrderPlaceTest#test_AddMultipleItemsToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;atfResults&apos;]/ul/li[1]/div/div[2]/div/a&quot;}
+Command duration or timeout: 54 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;PRINHYLTPAP0932.local&apos;, ip: &apos;172.16.53.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.3&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=name, value=field-keywords}
-Session ID: 6f708749-b9e3-f149-b10a-45237a4f5d5a
+*** Element info: {Using=xpath, value=//div[@id=&apos;atfResults&apos;]/ul/li[1]/div/div[2]/div/a}
+Session ID: ce84d92a-7371-1e49-8510-8b4f5359d553
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.2}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at locators.AmazonOrderPlace.clearValueInSearchField(AmazonOrderPlace.java:69)
-	at Tests.AmazonOrderPlaceTest.test_AddMultipleItemsToCart(AmazonOrderPlaceTest.java:68)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+	at locators.AmazonOrderPlace.clickOnSelectedItem(AmazonOrderPlace.java:37)
+	at Tests.AmazonOrderPlaceTest.test_AddMultipleItemsToCart(AmazonOrderPlaceTest.java:46)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;atfResults&apos;]/ul/li[1]/div/div[2]/div/a&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;PRINHYLTPAP0932.local&apos;, ip: &apos;172.16.53.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.3&apos;, java.version: &apos;1.7.0_79&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12715)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
-	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous7076445954344643490webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">Tests.AmazonOrderPlaceTest#test_AddSingleItemToCart</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">Tests.AmazonOrderPlaceTest#test_AddSingleItemToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;add-to-cart-button&quot;}
+Command duration or timeout: 121 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;PRINHYLTPAP0932.local&apos;, ip: &apos;172.16.53.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.3&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=id, value=add-to-cart-button}
+Session ID: ce84d92a-7371-1e49-8510-8b4f5359d553
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=44.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at locators.AmazonOrderPlace.clickOnAddToCartButton(AmazonOrderPlace.java:61)
+	at Tests.AmazonOrderPlaceTest.test_AddSingleItemToCart(AmazonOrderPlaceTest.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;add-to-cart-button&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;PRINHYLTPAP0932.local&apos;, ip: &apos;172.16.53.197&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/_f/fhgxvx4s4hl57vf322nk69qm0000gp/T/anonymous6027354066881214788webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
