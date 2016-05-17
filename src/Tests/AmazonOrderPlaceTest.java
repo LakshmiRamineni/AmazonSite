@@ -1,49 +1,38 @@
 package Tests;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import locators.AmazonOrderPlace;
+import locators.AmazonPageMethods;
 
 public class AmazonOrderPlaceTest extends BaseTest {
 
-	AmazonOrderPlace aop;
-	String valueToSearch1 = "shoes for women";
-	String valueToSearch2 = "infuser water bottle";
+	// AmazonOrderPlace apm;
+	AmazonPageMethods apm;
+	String valueToSearch1 = "Pens";
+	String valueToSearch2 = "watches for women";
+	String valueToSearch3 = "mobile phones";
+	String valueToSearch4 = "washing machine";
 	String expectedValueOfProceededOrder = "Proceed to checkout (1 item)";
-	String expectedValueOfProceededOrderBulk = "Proceed to checkout (2 item)";
+	String expectedValueOfProceededOrderBulk = "Proceed to checkout (4 item)";
 	String url = "http://www.amazon.in/";
 
 	@Test(priority = 1)
 	public void test_AddSingleItemToCart() {
-
-		aop = new AmazonOrderPlace(driver);
-		aop.goTo(url);
-		aop.setSearchFieldValue(valueToSearch1);
-		aop.selectItemFromTheList();
-		String parentWindow = driver.getWindowHandle();
-		aop.clickOnSelectedItem();
-		aop.switchToNewWindow(parentWindow);
-		aop.selectSize();
-		aop.clickOnAddToCartButton();
-		Assert.assertEquals(aop.getValueofSingleProceededOrder(), expectedValueOfProceededOrder, "Both are not equal");
+		apm = new AmazonPageMethods(driver);
+		apm.goTo(url);
+		apm.bulkOrderPlacement(new String[] { valueToSearch1});
+		Assert.assertEquals(apm.getValueofSingleProceededOrder(), expectedValueOfProceededOrder, "Both are not equal");
 	}
 
 	@Test(priority = 2)
 	public void test_AddMultipleItemsToCart() {
-		aop = new AmazonOrderPlace(driver);
-		aop.goTo(url);
-		aop.clearValueInSearchField();
-		aop.setSearchFieldValue(valueToSearch2);
-		aop.selectItemFromTheList();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
-		String parentWindow = driver.getWindowHandle();
-		aop.clickOnSelectedItem();
-		aop.switchToNewWindow(parentWindow);
-		aop.clickOnAddToCartButton();
-		Assert.assertEquals(aop.getValueofSingleProceededOrder(), expectedValueOfProceededOrder, "Both are not equal");
+		apm = new AmazonPageMethods(driver);
+		apm.goTo(url);
+		// apm.bulkOrderPlacement(valueToSearch2, valueToSearch3,
+		// valueToSearch4);
+		apm.bulkOrderPlacement(new String[] { valueToSearch2, valueToSearch3, valueToSearch4 });
+		Assert.assertEquals(apm.getValueofSingleProceededOrder(), expectedValueOfProceededOrder, "Both are not equal");
 
 	}
 
