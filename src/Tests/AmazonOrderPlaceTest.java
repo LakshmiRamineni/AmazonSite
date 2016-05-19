@@ -3,7 +3,7 @@ package Tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import locators.AmazonPageMethods;
+import functions.AmazonPageMethods;
 
 public class AmazonOrderPlaceTest extends BaseTest {
 

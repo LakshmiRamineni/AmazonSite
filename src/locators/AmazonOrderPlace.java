@@ -1,28 +1,22 @@
 package locators;
 
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class AmazonOrderPlace extends BasePage {
 
-	By searchField = By.name("field-keywords");
+	public By searchField = By.name("field-keywords");
 	//By selectItem = By.xpath("//div[@id='atfResults']/ul/li[1]/div/div[2]/div/a");
-	By selectItem = By.xpath("//div[@id='atfResults']/ul/li[1]//a[contains(@class,'s-access-detail-page')]/h2");
-	By selectbottleItem = By.xpath("//div[@id='atfResults']/ul/li[1]/div/div/div/div[2]/div[2]/a");
-	By sizeOfItem = By.xpath("//select[@id='native_dropdown_selected_size_name']");
-	By selectQuantity = By.id("selectQuantity");
-	By button_Search = By.xpath("//span[@id='nav-search-submit-text']");
-	By button_addToCard = By.id("add-to-cart-button");
-	By getvalueofsingleorder = By.xpath("//a[@id='hlb-ptc-btn-native-bottom']");
-	By button_Cart = By.id("hlb-view-cart-announce");
-	By button_Delete = By.xpath("//div[@class='a-row sc-action-links']/span[1]");
-	By selectFirstItem = By.xpath("//div[@id='suggestions']/div[@class='s-suggestion']");
+	public By selectItem = By.xpath("//div[@id='atfResults']/ul/li[1]//a[contains(@class,'s-access-detail-page')]/h2");
+	public By selectbottleItem = By.xpath("//div[@id='atfResults']/ul/li[1]/div/div/div/div[2]/div[2]/a");
+	public By sizeOfItem = By.xpath("//select[@id='native_dropdown_selected_size_name']");
+	public By selectQuantity = By.id("selectQuantity");
+	public By button_Search = By.xpath("//span[@id='nav-search-submit-text']");
+	public By button_addToCard = By.id("add-to-cart-button");
+	public By getvalueofsingleorder = By.xpath("//a[@id='hlb-ptc-btn-native-bottom']");
+	public By button_Cart = By.id("hlb-view-cart-announce");
+	public By button_Delete = By.xpath("//div[@class='a-row sc-action-links']/span[1]");
+	public By selectFirstItem = By.xpath("//div[@id='suggestions']/div[@class='s-suggestion']");
 
 	public AmazonOrderPlace(WebDriver driver) {
 		super(driver);
